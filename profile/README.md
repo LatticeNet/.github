@@ -11,12 +11,20 @@ The project goal is to combine:
 
 ## Repositories
 
+- [`latticenet.github.io`](https://github.com/LatticeNet/latticenet.github.io) - public website and documentation entry point.
 - [`lattice`](https://github.com/LatticeNet/lattice) - ecosystem overview, roadmap, and local workspace orchestration.
 - [`lattice-sdk`](https://github.com/LatticeNet/lattice-sdk) - shared Go models and future protocol definitions.
 - [`lattice-server`](https://github.com/LatticeNet/lattice-server) - control plane server.
 - [`lattice-node-agent`](https://github.com/LatticeNet/lattice-node-agent) - outbound node agent.
 - [`lattice-dashboard`](https://github.com/LatticeNet/lattice-dashboard) - static TypeScript dashboard.
 - [`lattice-plugin-template`](https://github.com/LatticeNet/lattice-plugin-template) - starter templates for system, Worker, and Wasm plugins.
+- [`lattice-plugin-index`](https://github.com/LatticeNet/lattice-plugin-index) - signed marketplace index foundation.
+
+## Install Shape
+
+- `lattice-server`: Docker/Compose or systemd binary behind HTTPS.
+- `lattice-node-agent`: systemd host binary by default.
+- Container image: `ghcr.io/latticenet/lattice-server`.
 
 ## Security Principles
 
@@ -28,7 +36,7 @@ The project goal is to combine:
 
 ## Status
 
-The first public cut is an MVP skeleton intended for rapid hardening. Production
-deployments should wait for SQLite migrations, packaged releases, and expanded
-security review.
-
+The project is an early security-first control plane. Private-fleet deployments
+should follow the hardening docs, keep management behind HTTPS/WireGuard or
+Cloudflare Access, and enable privileged node execution only where reviewed host
+mutation is required.
