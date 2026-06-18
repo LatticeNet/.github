@@ -19,6 +19,7 @@ The project goal is to combine:
 - [`lattice-dashboard`](https://github.com/LatticeNet/lattice-dashboard) - static TypeScript dashboard.
 - [`lattice-plugin-template`](https://github.com/LatticeNet/lattice-plugin-template) - starter templates for system, Worker, and Wasm plugins.
 - [`lattice-plugin-index`](https://github.com/LatticeNet/lattice-plugin-index) - signed marketplace index foundation.
+- [`Astra`](https://github.com/LatticeNet/Astra) - iOS companion app for phone-first fleet operations.
 
 ## Install Shape
 
